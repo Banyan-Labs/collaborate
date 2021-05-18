@@ -1,5 +1,8 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 function Footer() {
     return (
@@ -9,6 +12,7 @@ function Footer() {
                     {/* Column 1 */}
                     <div className="col-md-3 col-sm-6">
                         <h4>lorem ipsum</h4>
+                        {/* <a href="#"><i class="fa fa-facebook"></i></a> */}
                         <ul className="list-unstyled">
                             <li>lorem ipsum</li>
                             <li>lorem ipsum</li>
