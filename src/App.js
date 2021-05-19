@@ -2,13 +2,14 @@
 import './App.css';
 import Footer from './components/Footer'
 
+
 function App() {
   return (
-    <div className="App">
-      hello world from Collaborate
-      <Footer />
+    <div className="page-container">
+      <div className="content-wrap">
+        <Footer />
+      </div>
     </div>
-
   );
 }
 

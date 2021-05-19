@@ -1,54 +1,44 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import './Footer.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faAngry } from "@fortawesome/free-solid-svg-icons";
 
+// Created from the following video:
+// https://www.youtube.com/watch?v=g459Eia-bxw&t=89s
 
 function Footer() {
     return (
-        <div className="main-footer" id="footer">
+
+        <div className="main-footer">
+  
             <div className="container">
                 <div className="row">
                     {/* Column 1 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>lorem ipsum</h4>
+                        <a href="#">Home</a>
+                        {/* <FontAwesomeIcon icon={faSearch} /> */}
+                        {/* <FontAwesomeIcon icon={['fab', 'apple']} />
+                        <FontAwesomeIcon icon={['fab', 'microsoft']} />
+                        <FontAwesomeIcon icon={['fab', 'google']} /> */}
                         {/* <a href="#"><i class="fa fa-facebook"></i></a> */}
-                        <ul className="list-unstyled">
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                        </ul>
+                        {/* <FontAwesomeIcon icon={faFacebook} /> */}
+
                     </div>
                     {/* Column 2 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>lorem ipsum</h4>
-                        <ul className="list-unstyled">
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                        </ul>
+                        <h4>Twitter</h4>
+                        <FontAwesomeIcon icon={faAngry} />
+                        {/* <li><a href="#"><i class="fa fa-facebook"></i></a></li> */}
                     </div>
                     {/* Column 3 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>lorem ipsum</h4>
-                        <ul className="list-unstyled">
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                        </ul>
+                        <h4>Github</h4>
+                        <FontAwesomeIcon icon={faAngry} />
                     </div>
                     {/* Column 4 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>lorem ipsum</h4>
-                        <ul className="list-unstyled">
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                            <li>lorem ipsum</li>
-                        </ul>
+                        <h4>Linkedin</h4>
+                        <FontAwesomeIcon icon={faAngry} />
                     </div>
                 </div>
                 <div className="footer-bottom">
@@ -57,6 +47,7 @@ function Footer() {
                     </p>
                 </div>
             </div>
+           
         </div>
     )
 }
