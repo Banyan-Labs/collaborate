@@ -1,11 +1,14 @@
-import logo from './logo.svg';
+import React, { Component } from "react";
+import Hero from './components/Hero'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      hello world from Collaborate
-    </div>
+    <>
+      <Hero />
+
+
+    </>
   );
 }
 
