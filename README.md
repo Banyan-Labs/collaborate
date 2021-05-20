@@ -13,3 +13,5 @@ This project uses react-bootstrap v.4.6.0 for front end design
 
 - Michael Cozart
 - Tamara Eaton
+- Austin Hill
+- joseph caldwell
