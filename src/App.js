@@ -1,9 +1,10 @@
 import './App.css';
+import Footer from '../src/components/Footer/Footer'
 
 function App() {
   return (
-    <div className="App">
-      hello world from Collaborate
+    <div>
+      <Footer/>
     </div>
   );
 }
