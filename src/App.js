@@ -1,14 +1,10 @@
-import React, { Component } from "react";
-import Hero from './components/Hero'
 import './App.css';
 
 function App() {
   return (
-    <>
-      <Hero />
-
-
-    </>
+    <div className="App">
+      hello world from Collaborate
+    </div>
   );
 }
 
