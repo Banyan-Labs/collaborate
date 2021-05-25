@@ -1,11 +1,17 @@
-import logo from './logo.svg';
+import ProfileCard from './components/ProfileCard'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      hello world from Collaborate
-    </div>
+    <>
+      <div className="App">
+
+
+      </div>
+      <div>
+        <ProfileCard />
+      </div>
+    </>
   );
 }
 
