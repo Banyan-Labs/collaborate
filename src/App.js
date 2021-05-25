@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfileCard from './components/ProfileCard'
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Jumbotron />      
+      <Jumbotron />
+      <ProfileCard />
       <Footer />
     </div>
   );
