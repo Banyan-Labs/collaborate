@@ -9,3 +9,9 @@
 This project uses React ^17.0.2
 This project uses react-bootstrap v.4.6.0 for front end design
 
+# Collaborators
+
+- Michael Cozart
+- Tamara Eaton
+- Austin Hill
+- joseph caldwell

@@ -1,10 +1,15 @@
+import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Jumbotron />
+      <Navbar />
+      <Jumbotron />      
+      <Footer />
     </div>
   );
 }
