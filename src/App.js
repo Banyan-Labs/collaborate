@@ -1,18 +1,22 @@
 import React from 'react';
-import ProfileCard from './components/ProfileCard'
+import SITE_DATA from '../../site-data.js';
+import ProjectCard from './components/projects/ProjectsCard'
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import Footer from './components/Footer/Footer';
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />
       <Jumbotron />
-      <ProfileCard />
+      <ProjectCard />
+
       <Footer />
     </div>
+
   );
 }
 
