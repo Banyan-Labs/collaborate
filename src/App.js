@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/contactForm/contactForm'
 
 function App() {
   return (
     <div className="App">
-      hello world from Collaborate
+      <Form />
     </div>
   );
 }
