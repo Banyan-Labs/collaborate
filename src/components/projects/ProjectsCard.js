@@ -19,49 +19,49 @@ function ProjectCard(props) {
             </div>
 
             <CardGroup>
-                <Card className="mr-3 mb-5 ">
-                    <Card.Img variant="top" src={SITE_DATA.projects[0].thumbnailImage} class="rounded-2" alt="..." responsive />
-                    <Card.Body>
-                        <Card.Title style={{ textAlign: 'center', color: 'navy' }}><h2>{SITE_DATA.projects[0].projectName}</h2></Card.Title>
-                        <Card.Text>
-                            <h5>About project:</h5>
-                            <p>{SITE_DATA.projects[0].projectDescription}</p>
+                <Card className="mr-3 mb-5 ml-2">
+                    <Card.Img className=" border border-info border-4" variant="top" src={SITE_DATA.projects[0].thumbnailImage} alt="..." responsive />
+                    <Card.Body className=" border border-info border-4">
+                        <Card.Title className=" border border-primary border-bottom-4" style={{ textAlign: 'center', color: 'navy' }}><h2>{SITE_DATA.projects[0].projectName}</h2></Card.Title>
+                        <Card.Text className='color-info'>
+                            <h5 style={{ color: 'navy' }}>About project:</h5>
+                            <p className='color-info'>{SITE_DATA.projects[0].projectDescription}</p>
                         </Card.Text>
-                    </Card.Body>
-                    <Card.Footer style={{ textAlign: 'center', fontFamily: 'Algerian' }}>
+                    </Card.Body >
+                    <Card.Footer className="border border-info border-4" style={{ textAlign: 'center', fontFamily: 'Algerian' }}>
                         <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].githubUrl} >Banyan Labs Github</a>
                         <hr />
-                        <a className="btn btn-primary mr-3" href={SITE_DATA.projects[2].liveSiteUrl}  >Banyan Labs</a>
+                        <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].liveSiteUrl}  >Banyan Labs</a>
                     </Card.Footer>
                 </Card>
                 <Card className="mr-3 mb-5">
-                    <Card.Img variant="top" src={SITE_DATA.projects[1].thumbnailImage} responsive />
-                    <Card.Body>
-                        <Card.Title style={{ textAlign: 'center', color: 'navy' }}><h2>{SITE_DATA.projects[1].projectName}</h2></Card.Title>
-                        <Card.Text>
-                            <h5>About project:</h5>
-                            <p>{SITE_DATA.projects[1].projectDescription}</p>
+                    <Card.Img className=" border border-info border-4" variant="top" src={SITE_DATA.projects[1].thumbnailImage} responsive />
+                    <Card.Body className=" border border-info border-4">
+                        <Card.Title className=" border border-primary border-bottom-4" style={{ textAlign: 'center', color: 'navy' }}><h2>{SITE_DATA.projects[1].projectName}</h2></Card.Title>
+                        <Card.Text className='color-info'>
+                            <h5 style={{ color: 'navy' }}>About project:</h5>
+                            <p className='color-info'>{SITE_DATA.projects[1].projectDescription}</p>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer style={{ textAlign: 'center', fontFamily: 'Algerian' }}>
+                    <Card.Footer className="border border-info border-4" style={{ textAlign: 'center', fontFamily: 'Algerian' }}>
                         <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].githubUrl} >Banyan Labs Github</a>
                         <hr />
-                        <a className="btn btn-primary mr-3" href={SITE_DATA.projects[2].liveSiteUrl}  >Banyan Labs</a>
+                        <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].liveSiteUrl}  >Banyan Labs</a>
                     </Card.Footer>
                 </Card>
                 <Card className="mr-3 mb-5">
-                    <Card.Img variant="top" src={SITE_DATA.projects[2].thumbnailImage} responsive />
-                    <Card.Body>
-                        <Card.Title style={{ textAlign: 'center', color: 'navy' }}><h2>{SITE_DATA.projects[2].projectName}</h2></Card.Title>
-                        <Card.Text>
-                            <h5>About project:</h5>
-                            <p>{SITE_DATA.projects[2].projectDescription}</p>
+                    <Card.Img className=" border border-info border-4" variant="top" src={SITE_DATA.projects[2].thumbnailImage} responsive />
+                    <Card.Body className=" border border-info border-4">
+                        <Card.Title className=" border border-primary border-bottom-4" style={{ textAlign: 'center', color: 'navy' }}><h2>{SITE_DATA.projects[2].projectName}</h2></Card.Title>
+                        <Card.Text className='color-info'>
+                            <h5 style={{ color: 'navy' }}>About project:</h5>
+                            <p className='color-info' >{SITE_DATA.projects[2].projectDescription}</p>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer style={{ textAlign: 'center', fontFamily: 'Algerian' }}>
+                    <Card.Footer className="border border-info border-4" style={{ textAlign: 'center', fontFamily: 'Algerian' }}>
                         <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].githubUrl} >Banyan Labs Github</a>
                         <hr />
-                        <a className="btn btn-primary mr-3" href={SITE_DATA.projects[2].liveSiteUrl}  >Banyan Labs</a>
+                        <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].liveSiteUrl}  >Banyan Labs</a>
                     </Card.Footer>
                 </Card>
             </CardGroup>
