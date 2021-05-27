@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProjectCard from '../src/components/projects/ProjectsCard'
+
 ReactDOM.render(
   <React.StrictMode>
-    <ProjectCard />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
