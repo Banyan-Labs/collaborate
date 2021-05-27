@@ -6,10 +6,10 @@ export const SITE_DATA = {
         twitter:"https://twitter.com/",
         linkedIn:"https://www.linkedin.com/",
     },
-    jumbotronText: {
-        heading: "Welcome to whatever",
-        subheading: "the world of coding is special",
-        buttonText: "Learn More!",
+    jumbotronTxet: {
+        heading: "Welcome to my project page!",
+        subheading: "I'm so excited to show off my progress?",
+        buttonText: "Read on?",
     },
     projects: [
         {   
