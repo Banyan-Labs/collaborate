@@ -2,13 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { SITE_DATA } from '../../site-data'
 import { Card, CardGroup } from 'react-bootstrap';
-import ProjectPicture from "./project_images/project_default1.png";
-import ProjectPicture2 from "./project_images/project_default2.png";
-import ProjectPicture3 from "./project_images/project_default3.jpg";
-
-
-
-
 
 function ProjectCard(props) {
     return (
