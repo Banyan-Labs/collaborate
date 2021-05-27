@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileCard from './components/ProfileCard'
+import ProjectCard from './components/projects/ProjectsCard'
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Jumbotron />
-      <ProfileCard />
+      <ProjectCard />
       <Footer />
     </div>
   );
