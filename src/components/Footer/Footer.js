@@ -16,7 +16,7 @@ function Footer() {
                 <div className="row">
                     {/* Column 1 */}
                     <div className="col-md-3 col-sm-6">
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </div>
                     {/* Column 2 */}
                     <div className="col-md-3 col-sm-6">
