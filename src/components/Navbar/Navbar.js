@@ -1,12 +1,13 @@
 
 import React from 'react';
+import {SITE_DATA} from '../../site-data'
 import * as ReactBootStrap from 'react-bootstrap';
 
 class Navbar extends React.Component {
   render() {
     return(
       <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <ReactBootStrap.Navbar.Brand href="/">Introducing</ReactBootStrap.Navbar.Brand>
+        <ReactBootStrap.Navbar.Brand href="/">{SITE_DATA.developerName}</ReactBootStrap.Navbar.Brand>
         <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
         <ReactBootStrap.Nav className="mr-auto">
