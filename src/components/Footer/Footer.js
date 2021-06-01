@@ -1,7 +1,8 @@
 import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import {SITE_DATA} from '../../site-data'
 
 // Created from the following video:
 // https://www.youtube.com/watch?v=g459Eia-bxw&t=89s
@@ -10,37 +11,37 @@ function Footer() {
     return (
 
         <div className="main-footer">
-  
+
             <div className="container">
                 <div className="row">
                     {/* Column 1 */}
                     <div className="col-md-3 col-sm-6">
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </div>
                     {/* Column 2 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>Twitter</h4>
-                        <FontAwesomeIcon icon={faTwitter} />
+                        <h5 style={{color:'lightgray'}}>Social Media</h5>
+                        <ul>
+                            <li className="list-unstyled"><a href={SITE_DATA.contactLinks.github}><FontAwesomeIcon icon={faGithub} /></a></li>
+                            <li className="list-unstyled"><a href={SITE_DATA.contactLinks.twitter}><FontAwesomeIcon icon={faTwitter} /></a></li>
+                            <li className="list-unstyled"><a href={SITE_DATA.contactLinks.linkedIn}><FontAwesomeIcon icon={faLinkedin} /></a></li>
 
-                    </div>
-                    {/* Column 3 */}
-                    <div className="col-md-3 col-sm-6">
-                        <h4>Github</h4>
-                        <FontAwesomeIcon icon={faGithub} />
-                    </div>
-                    {/* Column 4 */}
-                    <div className="col-md-3 col-sm-6">
-                        <h4>Linkedin</h4>
-                        <FontAwesomeIcon icon={faLinkedin} />
+                        </ul>
                     </div>
                 </div>
-                <div className="footer-bottom">
-                    <p className="text-xs-center">
-                        &copy;{new Date().getFullYear()} Tamara's Great Footer - All Rights Reserved
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-right">
+                                <p className="text-xs-center" style={{color:'lightgray'}}>
+                                    &copy;{new Date().getFullYear()} Banyan Labs - All Rights Reserved
                     </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-           
+
         </div>
     )
 }

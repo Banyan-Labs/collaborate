@@ -1,7 +1,12 @@
 .main-footer {
-    background-color: lightgray;
+    background-color: #343a40;
     color: white;
     padding: 1em;
     bottom: 0;
     width: 100%;
+}
+
+.footer-copyright {
+    border-top: solid;
+    border-color: black;
 }
