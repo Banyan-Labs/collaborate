@@ -7,6 +7,8 @@ import {SITE_DATA} from '../../site-data'
 // Created from the following video:
 // https://www.youtube.com/watch?v=g459Eia-bxw&t=89s
 
+// test comment
+
 function Footer() {
     return (
 
