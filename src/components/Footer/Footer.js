@@ -12,23 +12,17 @@ function Footer() {
 
         <div className="main-footer">
 
-            <div className="container">
-                <div className="row">
-                    {/* Column 1 */}
-                    <div className="col-md-3 col-sm-6">
-                        <a href="/">Home</a>
-                    </div>
-                    {/* Column 2 */}
-                    <div className="col-md-3 col-sm-6">
-                        <h5 style={{color:'lightgray'}}>Social Media</h5>
-                        <ul>
-                            <li className="list-unstyled"><a href={SITE_DATA.contactLinks.github}><FontAwesomeIcon icon={faGithub} /></a></li>
-                            <li className="list-unstyled"><a href={SITE_DATA.contactLinks.twitter}><FontAwesomeIcon icon={faTwitter} /></a></li>
-                            <li className="list-unstyled"><a href={SITE_DATA.contactLinks.linkedIn}><FontAwesomeIcon icon={faLinkedin} /></a></li>
+            {/* <div className="container"> */}
+                {/* <div className="row"> */}
+                    <div class="flex-container">
 
-                        </ul>
+                           <div><a href={SITE_DATA.contactLinks.github}><FontAwesomeIcon icon={faGithub} /></a></div>
+                           <div><a href={SITE_DATA.contactLinks.twitter}><FontAwesomeIcon icon={faTwitter} /></a></div>
+                           <div><a href={SITE_DATA.contactLinks.linkedIn}><FontAwesomeIcon icon={faLinkedin} /></a></div>
+
+          
                     </div>
-                </div>
+                {/* </div> */}
                 <div class="footer-copyright">
                     <div class="container">
                         <div class="row">
@@ -40,7 +34,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
 
         </div>
     )
