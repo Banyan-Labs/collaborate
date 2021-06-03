@@ -10,7 +10,7 @@ export default function ProjectsSection(props) {
 
         <div className="mt-3">
             <div className="mb-5 border border-bottom-3 border-warning">
-                <h1 style={{ textAlign: 'center', color: 'indigo', fontFamily: 'Algerian' }}>Project Section</h1>
+                <h1 style={{ textAlign: 'center', color: 'violet', fontFamily: 'Algerian' }}>Project Section</h1>
             </div>
             <div>
 
