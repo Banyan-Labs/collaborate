@@ -1,6 +1,6 @@
 
 import React from 'react';
-import ProjectCard from './components/projects/ProjectsCard'
+import ProjectSection from './components/ProjectsSection'
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Jumbotron />
       <Form />
-      <ProjectCard />
+      <ProjectSection />
       <Footer />
 
     </div>
