@@ -13,7 +13,7 @@ function ProjectsCard(props) {
                 {SITE_DATA.projects.map(item => {
                     return (
 
-                        <Card style={{ width: '30rem' }} className="mr-3 mb-5 ml-2 mt-5">
+                        <Card className="mr-3 mb-5 ml-2 mt-5">
                             <Card.Header as="h1" className="text-center border border-info " style={{ color: 'indigo' }}>PROJECT</Card.Header>
                             <Card.Img className=" border border-info border-4 .img-thumbnail" variant="top" src={item.thumbnailImage} alt="..." responsive />
                             <Card.Body className=" border border-info border-4">
