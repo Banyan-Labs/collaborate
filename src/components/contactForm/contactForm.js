@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Button, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ContactForm.css'
+import './contactForm.css'
 
 function ContactForm() {
     return (
