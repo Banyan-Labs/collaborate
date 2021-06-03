@@ -1,0 +1,12 @@
+.card-wrap {
+   max-width: 40%;
+    min-width: 30%;
+    flex-direction: row;
+    flex-grow:0;
+    flex-wrap: wrap;
+    
+  };
+  
+.card-group{
+  display:flex;
+}
