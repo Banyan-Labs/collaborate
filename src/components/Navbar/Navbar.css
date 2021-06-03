@@ -1,0 +1,25 @@
+.navbar {
+    background: #828489;
+    color: white;
+}
+
+.links {
+    position: absolute;
+    right: 10px;
+}
+
+#home-link-name {
+    color: white;
+}
+
+#projects-link-name {
+    color: white;
+}
+
+#contacts-link-name {
+    color: white;
+}
+
+#Dev-name {
+    color: white;
+}
