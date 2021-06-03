@@ -5,13 +5,17 @@
 
 .footer-links {
     display: flex;
+    justify-content: center;
 }
 
 .footer-links > div {
-    margin-left: 250px;
+    /* margin-left: 250px; */
     text-align: center; 
     font-size: 40px;
     width: 50px;
+    margin: 10px 40px;
+    /* margin-left:40px; */
+    /* margin-right:40px; */
 }
 
 .copyright-text {
