@@ -6,7 +6,7 @@ import '../card.css'
 
 
 
-function ProjectsCard(props) {
+function ProjectCard(props) {
     return (
         <div>
             <div className="card-group">
@@ -14,10 +14,10 @@ function ProjectsCard(props) {
                 {SITE_DATA.projects.map(item => {
                     return (
 
-                        <Card key={Math.random()} text="white" className=" mr-3 mb-5 ml-5 mt-5 cards">
+                        <Card text="white" className=" mr-3 mb-5 ml-5 mt-5 cards">
 
-                            <div className=".img-div">
-                                <Card.Img className=".img-thumbnail " variant="top" src={item.thumbnailImage} alt="..." responsive />
+                            <div style={{ backgroundColor: " rgb(155, 148, 148)" }}>
+                                <Card.Img style={{ width: "95%", height: "250px", borderRadius: "10%", marginLeft: "12px" }} className=".img-thumbnail cardImg" variant="top" src={item.thumbnailImage} alt="..." responsive />
                             </div>
                             <Card.Body className="cardB">
                                 <Card.Title as='h2' style={{ color: 'white' }}><h2>{item.projectName}</h2></Card.Title>
@@ -41,5 +41,5 @@ function ProjectsCard(props) {
     )
 }
 
-export default ProjectsCard;
+export default ProjectCard;
 

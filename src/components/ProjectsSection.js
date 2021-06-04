@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from './projects/ProjectsCard';
+import ProjectCard from './projects/ProjectCard';
 
 
 

@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-grow:0;
     flex-wrap: wrap;
-    width: 14rem;
+    
   };
   .linkHolder{
     background-color: rgb(155, 148, 148);
@@ -19,9 +19,6 @@
 }
 .cardImg{
   background-color: azure;
-  
+  border-radius:"10%";
   z-index:100;
-}
-.img-div{
-  width:300px;
 }
