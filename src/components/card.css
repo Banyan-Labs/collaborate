@@ -1,11 +1,27 @@
-.card-wrap {
+.cards {
  
     flex-direction: row;
     flex-grow:0;
     flex-wrap: wrap;
-    
+    width: 14rem;
   };
+  .linkHolder{
+    background-color: rgb(155, 148, 148);
+  }
+
+
   
 .card-group{
   display:flex;
+}
+.cardB{
+  background-color: rgb(155, 148, 148);
+}
+.cardImg{
+  background-color: azure;
+  
+  z-index:100;
+}
+.img-div{
+  width:300px;
 }
