@@ -5,6 +5,8 @@ import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-ic
 import { SITE_DATA } from '../../site-data'
 
 
+// test comment
+
 function Footer() {
     return (
 
