@@ -5,7 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import Footer from './components/Footer/Footer';
-import Form from './components/contactForm/contactForm'
+import ContactForm from './components/contactForm/contactForm'
 
 
 function App() {
@@ -14,8 +14,9 @@ function App() {
 
       <Navbar />
       <Jumbotron />
-      <Form />
+
       <ProjectSection />
+      <ContactForm />
       <Footer />
 
     </div>
