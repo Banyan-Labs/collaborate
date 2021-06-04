@@ -5,7 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import Footer from './components/Footer/Footer';
-import ContactForm from './components/contactForm/contactForm'
+import ContactForm from './components/contactForm/ContactForm'
 
 
 function App() {
