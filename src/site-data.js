@@ -7,7 +7,7 @@ export const SITE_DATA = {
         twitter: "https://twitter.com/",
         linkedIn: "https://www.linkedin.com/",
     },
-    jumbotronTxet: {
+    jumbotronText: {
         heading: "Welcome to my project page!",
         subheading: "I'm so excited to show off my progress?",
         buttonText: "Read on?",

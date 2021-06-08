@@ -1,65 +1,45 @@
-import React from 'react';
+import React, { useContext } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { SITE_DATA } from '../../site-data'
-import { Card, CardGroup } from 'react-bootstrap';
+
+import ThemeContext from '../../theme-context';
+import { SITE_DATA } from '../../site-data';
+import { Card } from 'react-bootstrap';
+import './card.css'
+
+
 
 function ProjectCard(props) {
+    const theme = useContext(ThemeContext);
     return (
 
-        <div>
-            <div className="mb-5 border border-bottom-3 border-warning">
-                <h1 style={{ textAlign: 'center', color: 'indigo', fontFamily: 'Algerian' }}>Project Page</h1>
-            </div>
+        <div style={theme} className="card-group">
 
-            <CardGroup>
-                <Card className="mr-3 mb-5 ml-2">
-                    <Card.Img className=" border border-info border-4" variant="top" src={SITE_DATA.projects[0].thumbnailImage} alt="..." responsive />
-                    <Card.Body className=" border border-info border-4">
-                        <Card.Title className=" border border-primary border-bottom-4" style={{ textAlign: 'center', color: 'navy' }}><h2>{SITE_DATA.projects[0].projectName}</h2></Card.Title>
-                        <Card.Text className='color-info'>
-                            <h5 style={{ color: 'navy' }}>About project:</h5>
-                            <p className='color-info'>{SITE_DATA.projects[0].projectDescription}</p>
-                        </Card.Text>
-                    </Card.Body >
-                    <Card.Footer className="border border-info border-4" style={{ textAlign: 'center', fontFamily: 'Algerian' }}>
-                        <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].githubUrl} >Banyan Labs Github</a>
-                        <hr />
-                        <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].liveSiteUrl}  >Banyan Labs</a>
-                    </Card.Footer>
-                </Card>
-                <Card className="mr-3 mb-5">
-                    <Card.Img className=" border border-info border-4" variant="top" src={SITE_DATA.projects[1].thumbnailImage} responsive />
-                    <Card.Body className=" border border-info border-4">
-                        <Card.Title className=" border border-primary border-bottom-4" style={{ textAlign: 'center', color: 'navy' }}><h2>{SITE_DATA.projects[1].projectName}</h2></Card.Title>
-                        <Card.Text className='color-info'>
-                            <h5 style={{ color: 'navy' }}>About project:</h5>
-                            <p className='color-info'>{SITE_DATA.projects[1].projectDescription}</p>
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer className="border border-info border-4" style={{ textAlign: 'center', fontFamily: 'Algerian' }}>
-                        <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].githubUrl} >Banyan Labs Github</a>
-                        <hr />
-                        <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].liveSiteUrl}  >Banyan Labs</a>
-                    </Card.Footer>
-                </Card>
-                <Card className="mr-3 mb-5">
-                    <Card.Img className=" border border-info border-4" variant="top" src={SITE_DATA.projects[2].thumbnailImage} responsive />
-                    <Card.Body className=" border border-info border-4">
-                        <Card.Title className=" border border-primary border-bottom-4" style={{ textAlign: 'center', color: 'navy' }}><h2>{SITE_DATA.projects[2].projectName}</h2></Card.Title>
-                        <Card.Text className='color-info'>
-                            <h5 style={{ color: 'navy' }}>About project:</h5>
-                            <p className='color-info' >{SITE_DATA.projects[2].projectDescription}</p>
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer className="border border-info border-4" style={{ textAlign: 'center', fontFamily: 'Algerian' }}>
-                        <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].githubUrl} >Banyan Labs Github</a>
-                        <hr />
-                        <a className="btn btn-primary mr-5" href={SITE_DATA.projects[2].liveSiteUrl}  >Banyan Labs</a>
-                    </Card.Footer>
-                </Card>
-            </CardGroup>
+            {SITE_DATA.projects.map(item => {
+                return (
+
+                    <Card text="white" className=" mr-3 mb-5 ml-5 mt-5 cards">
+
+                        <div style={{ backgroundColor: " rgb(155, 148, 148)" }}>
+                            <Card.Img style={{ width: "95%", height: "250px", borderRadius: "10%", marginLeft: "12px" }} className=".img-thumbnail cardImg" variant="top" src={item.thumbnailImage} alt="..." responsive />
+                        </div>
+                        <Card.Body className="cardB">
+                            <Card.Title as='h2' style={{ color: 'white' }}><h2>{item.projectName}</h2></Card.Title>
+                            <Card.Text >
+
+                                <p style={{ color: 'white' }}>{item.projectDescription}</p>
+                            </Card.Text>
+                        </Card.Body >
+                        <Card.Body style={{ color: 'white', backgroundColor: " rgb(155, 148, 148) " }} className="linkHolder"  >
+                            <a style={{ color: 'white', backgroundColor: "lime" }} className="btn btn-secondary mr-5 ml-1" href={item.githubUrl} >View Code</a>
+
+                            <a style={{ color: 'white', backgroundColor: "navy", marginLeft: '150px', float: 'right' }} className="btn btn-secondary ml-5" href={item.liveSiteUrl} >View Live</a>
+                        </Card.Body>
+                    </Card>
+                );
+            })}
 
         </div>
+
 
     )
 }

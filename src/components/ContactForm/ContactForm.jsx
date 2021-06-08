@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Form, Button, Col } from 'react-bootstrap';
+
+import ThemeContext from '../../theme-context';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ContactForm.css'
 
 function ContactForm() {
+    const theme = useContext(ThemeContext);
     return (
-        <div>
+        <div style={theme} >
             <Form className="contact-form">
                 <Col>
                     <h4>Contact Me</h4>
@@ -25,4 +28,4 @@ function ContactForm() {
     )
 }
 
-export default ContactForm
+export default ContactForm;
