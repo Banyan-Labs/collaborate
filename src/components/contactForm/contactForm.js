@@ -2,7 +2,7 @@ import React from 'react'
 import {Form, Button, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function contactForm() {
+function ContactForm() {
     return (
         <div>
             <Form>
@@ -27,4 +27,4 @@ function contactForm() {
     )
 }
 
-export default contactForm
+export default ContactForm
