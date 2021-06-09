@@ -14,7 +14,6 @@ function App() {
 
       <Navbar />
       <Jumbotron />
-
       <ProjectSection />
       <ContactForm />
       <Footer />

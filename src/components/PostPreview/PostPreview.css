@@ -1,0 +1,14 @@
+.container {
+    width: 500px;
+    padding: 10px;
+}
+
+.author-date-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-row {
+    display: flex;
+}
+

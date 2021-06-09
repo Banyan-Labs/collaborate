@@ -1,12 +1,25 @@
 .main-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 1em;
-    bottom: 0;
-    width: 100%;
+    background-color: #828489;
+    position:bottom;
 }
 
-.footer-copyright {
-    border-top: solid;
-    border-color: black;
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links > div {
+    /* margin-left: 250px; */
+    text-align: center; 
+    font-size: 40px;
+    width: 50px;
+    margin: 10px 40px;
+    /* margin-left:40px; */
+    /* margin-right:40px; */
+}
+
+.copyright-text {
+    color: white;
+    text-align: center;
+    margin: 0px;
 }
