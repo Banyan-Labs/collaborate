@@ -4,11 +4,23 @@
     margin-left: 225px;
     margin-top: 100px;
 }
+/* .form-input::placeholder{
+    background-color: #474646;
+    color:'#111';
+} */
 
 .form-input {
     background-color: #B0B0B0;
+    
 }
-
+/* .form-inputTwo::placeholder{
+    background-color: #B0B0B0;
+    color:'#fff';
+} */
+.form-inputTwo {
+    background-color: #B0B0B0;
+    
+}
 .form-control::-webkit-input-placeholder {
     color: white;
 }

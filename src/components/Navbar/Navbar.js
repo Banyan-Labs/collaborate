@@ -7,15 +7,15 @@ import './Navbar.css'
 export default function Navbar() {
   const theme = useContext(ThemeContext);
   return (
-    <ReactBootStrap.Navbar collapseOnSelect >
+    <ReactBootStrap.Navbar style={theme} collapseOnSelect >
       {
         SITE_DATA.logo === "" ?
           null :
-          <ReactBootStrap.Navbar.Brand href="/">
+          <ReactBootStrap.Navbar.Brand variant="pills" href="/">
             <img src={SITE_DATA.logo} alt="my-logo" style={{ width: 100 }} />
           </ReactBootStrap.Navbar.Brand>
       }
-      <ReactBootStrap.Navbar.Brand style={theme} id="Dev-name" href="/">{SITE_DATA.developerName}</ReactBootStrap.Navbar.Brand>
+      <ReactBootStrap.Navbar.Brand id="Dev-name" href="/">{SITE_DATA.developerName}</ReactBootStrap.Navbar.Brand>
       <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
         <div style={theme} className="links">

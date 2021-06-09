@@ -7,10 +7,11 @@ import './ContactForm.css'
 
 function ContactForm() {
     const theme = useContext(ThemeContext);
+
     return (
         <div style={theme} >
-            <Form className="contact-form">
-                <Col>
+            <Form className="contact-form" >
+                <Col style={theme}>
                     <h4>Contact Me</h4>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Control className="form-input" type="text" placeholder="First Name" />
