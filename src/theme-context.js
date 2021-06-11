@@ -5,8 +5,10 @@ export const themes = {
         color: '#111',
         background: '#EEE',
         padding: '5px',
-        a: { color: '#9f0dcd', },
+
+        a: { color: '#9f0dcd' }
     },
+
     dark: {
         color: '#FFF',
         background: '#222',

@@ -9,8 +9,8 @@ function ContactForm() {
     const theme = useContext(ThemeContext);
 
     return (
-        <div style={theme} >
-            <Form className="contact-form" >
+        <div  >
+            <Form style={theme} className="contact-form mb-5 mr-3" >
                 <Col style={theme}>
                     <h4>Contact Me</h4>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

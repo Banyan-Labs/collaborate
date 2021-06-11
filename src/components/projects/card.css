@@ -5,17 +5,31 @@
     flex-wrap: wrap;
     
   };
+  .cardSect{
+    width:100vw;
+  }
   .linkHolder{
     background-color: rgb(155, 148, 148);
   }
+.cardColor{
+  background-color: rgb(155, 148, 148)
+}
 
-
-  
+div.dark{
+ background-color: rgb(19, 19, 18);
+ width:100vw;
+}
+div.light{
+  background-color: rgb(19, 19, 18);
+  width:100vw;
+ }  
 .card-group{
   display:flex;
+  
 }
-.cardB{
+.cards{
   background-color: rgb(155, 148, 148);
+  width: '24rem';
 }
 .cardImg{
   background-color: azure;

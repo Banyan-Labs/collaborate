@@ -9,8 +9,8 @@ import './Jumbotron.css'
 function Jumbo() {
     const theme = useContext(ThemeContext);
     return (
-        <div style={theme}>
-            <Jumbotron id="layout">
+        <div >
+            <Jumbotron style={theme} id="layout">
                 <div>
                     <h1>{SITE_DATA.jumbotronText.heading}</h1>
                     <p>{SITE_DATA.jumbotronText.subheading}</p>

@@ -1,13 +1,12 @@
 .navbar {
     background: #828489;
     color: white;
-    border:blue 2px solid;
+    border:#47464d 2px dashed;
 }
 
 .links {
     position: absolute;
     right: 10px;
-     color: white;
 }
 
 #home-link-name {

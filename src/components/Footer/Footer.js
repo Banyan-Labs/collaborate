@@ -15,17 +15,17 @@ function Footer() {
     const theme = useContext(ThemeContext);
     return (
 
-        <div style={theme} className="main-footer">
+        <div className="main-footer">
 
-            <div className="container">
+            <div style={theme} className="container">
                 <div className="row">
                     {/* Column 1 */}
-                    <div className="col-md-3 col-sm-6">
+                    <div style={theme} className="col-md-3 col-sm-6">
                         <a href="/">Home</a>
                     </div>
                     {/* Column 2 */}
-                    <div className="col-md-3 col-sm-6">
-                        <h5 style={{ color: 'lightgray' }}>Social Media</h5>
+                    <div style={theme} className="col-md-3 col-sm-6">
+                        <h5 style={theme}>Social Media</h5>
                         <ul>
                             <li className="list-unstyled"><a href={SITE_DATA.contactLinks.github}><FontAwesomeIcon icon={faGithub} /></a></li>
                             <li className="list-unstyled"><a href={SITE_DATA.contactLinks.twitter}><FontAwesomeIcon icon={faTwitter} /></a></li>
@@ -38,9 +38,9 @@ function Footer() {
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-right">
-                                <p className="text-xs-center" style={{ color: 'lightgray' }}>
+                                <p className="text-xs-center" style={theme}>
                                     &copy;{new Date().getFullYear()} Banyan Labs - All Rights Reserved
-                    </p>
+                                </p>
                             </div>
                         </div>
                     </div>

@@ -1,24 +1,31 @@
-
-import React, { useContext } from 'react';
-import ProjectCard from './ProjectsCard';
-
+import React, { useContext } from 'react'
+import ProjectCard from './ProjectCard';
+import { SITE_DATA } from '../../site-data';
 import ThemeContext from '../../theme-context';
-
+import { CardGroup, Container } from 'react-bootstrap';
+import './card.css';
 
 
 export default function ProjectsSection(props) {
     const theme = useContext(ThemeContext);
     return (
 
-        <div style={theme} className="mt-3">
 
-            <div>
+        <Container fluid>
 
-                <ProjectCard key={Math.random()} />
+            <div className="card-group">
+                <CardGroup className="cardSect"  >
 
+                    {SITE_DATA.projects.map(item =>
 
+                        <ProjectCard style={theme} key={item} image={item.thumbnailImage} name={item.projectName}
+                            description={item.projectDescription} git={item.githubUrl} site={item.liveSiteUrl} />
+
+                    )}
+
+                </CardGroup>
             </div>
-        </div>
+        </Container>
 
     )
 }
