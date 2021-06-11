@@ -11,15 +11,35 @@ function Footer() {
     return (
 
         <div className="main-footer">
-            <div class="footer-links">
-                <div><a style={{color:'white'}} href={SITE_DATA.contactLinks.github}><FontAwesomeIcon icon={faGithub} /></a></div>
-                <div><a style={{color:'white'}} href={SITE_DATA.contactLinks.twitter}><FontAwesomeIcon icon={faTwitter} /></a></div>
-                <div><a style={{color:'white'}} href={SITE_DATA.contactLinks.linkedIn}><FontAwesomeIcon icon={faLinkedin} /></a></div>
-            </div>
-            <div className="footer-copyright"> 
-                <p className="copyright-text">
-                &copy;{new Date().getFullYear()} Banyan Labs - All Rights Reserved
-                </p>
+
+            <div className="container">
+                <div style={theme} className="row">
+                    {/* Column 1 */}
+                    <div className="col-md-3 col-sm-6">
+                        <a href="/">Home</a>
+                    </div>
+                    {/* Column 2 */}
+                    <div className="col-md-3 col-sm-6">
+                        <h5 style={{ color: 'lightgray' }}>Social Media</h5>
+                        <ul>
+                            <li className="list-unstyled"><a href={SITE_DATA.contactLinks.github}><FontAwesomeIcon icon={faGithub} /></a></li>
+                            <li className="list-unstyled"><a href={SITE_DATA.contactLinks.twitter}><FontAwesomeIcon icon={faTwitter} /></a></li>
+                            <li className="list-unstyled"><a href={SITE_DATA.contactLinks.linkedIn}><FontAwesomeIcon icon={faLinkedin} /></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-right">
+                                <p className="text-xs-center" style={{ color: 'lightgray' }}>
+                                    &copy;{new Date().getFullYear()} Banyan Labs - All Rights Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -3,14 +3,16 @@ import { SITE_DATA } from '../../site-data'
 import * as ReactBootStrap from 'react-bootstrap';
 import './Navbar.css'
 
-class Navbar extends React.Component {
-  render() {
-    return (
-      <ReactBootStrap.Navbar collapseOnSelect >
+export default function Navbar() {
+  const theme = useContext(ThemeContext);
+
+  return (
+    <div>
+      <ReactBootStrap.Navbar style={theme} collapseOnSelect >
         {
           SITE_DATA.logo === "" ?
             null :
-            <ReactBootStrap.Navbar.Brand href="/">
+            <ReactBootStrap.Navbar.Brand variant="pills" href="/">
               <img src={SITE_DATA.logo} alt="my-logo" style={{ width: 100 }} />
             </ReactBootStrap.Navbar.Brand>
         }
@@ -28,7 +30,7 @@ class Navbar extends React.Component {
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
-    )
-  }
+    </div>
+  )
 }
 export default Navbar;

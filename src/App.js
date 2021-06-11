@@ -8,10 +8,19 @@ import Footer from './components/Footer/Footer';
 import ContactForm from './components/ContactForm/ContactForm'
 
 
+
+const customButton = {
+
+  backgroundColor: '#0B0C10',
+  borderColor: '#45A293',
+  color: '#45A293',
+  borderRadius: '100px'
+};
+
 function App() {
   return (
-    <div className="App">
-
+    <ThemeContext.Provider value={theme}>
+      <button style={customButton} onClick={toggleTheme}>Change Theme</button>
       <Navbar />
       <Jumbotron />
       <ProjectSection />
