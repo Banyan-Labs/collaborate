@@ -34,5 +34,6 @@ export const SITE_DATA = {
             githubUrl: "https://github.com/",
             liveSiteUrl: "https://banyanlabs.io/",
         },
+
     ]
 }
