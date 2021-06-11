@@ -26,9 +26,9 @@ function App() {
         <button onClick={toggleTheme}>Toggle theme</button>      
         <Navbar />
         <Jumbotron />
-        {/* <ProjectCard /> */}
-        {/* <ContactForm /> */}
-        {/* <Footer /> */}
+        <ProjectCard />
+        <ContactForm />
+        <Footer />
       </>     
     </ThemeProvider>
   );
