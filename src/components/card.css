@@ -1,24 +1,20 @@
 .cards {
- 
-    flex-direction: row;
-    flex-grow:0;
-    flex-wrap: wrap;
-    
-  };
-  .linkHolder{
-    background-color: rgb(155, 148, 148);
-  }
-
-
-  
-.card-group{
-  display:flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-wrap: wrap;
 }
-.cardB{
+.linkHolder {
   background-color: rgb(155, 148, 148);
 }
-.cardImg{
+
+.card-group {
+  display: flex;
+}
+.cardB {
+  background-color: rgb(155, 148, 148);
+}
+.cardImg {
   background-color: azure;
-  border-radius:"10%";
-  z-index:100;
+  border-radius: '10%';
+  z-index: 100;
 }

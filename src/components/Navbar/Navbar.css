@@ -1,25 +1,25 @@
 .navbar {
-    background: #828489;
-    color: white;
+  background: #828489;
+  color: white;
 }
 
 .links {
-    position: absolute;
-    right: 10px;
+  position: absolute;
+  right: 10px;
 }
 
 #home-link-name {
-    color: white;
+  color: white;
 }
 
 #projects-link-name {
-    color: white;
+  color: white;
 }
 
 #contacts-link-name {
-    color: white;
+  color: white;
 }
 
 #Dev-name {
-    color: white;
+  color: white;
 }
