@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
-import ProjectCard from './components/projects/ProjectsCard'
+import ProjectSection from './components/ProjectsSection'
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import Footer from './components/Footer/Footer';
@@ -26,7 +26,7 @@ function App() {
         <button onClick={toggleTheme}>Toggle theme</button>      
         <Navbar />
         <Jumbotron />
-        <ProjectCard />
+        <ProjectSection />
         <ContactForm />
         <Footer />
       </>     
