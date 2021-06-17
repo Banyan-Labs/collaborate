@@ -1,25 +1,25 @@
 .main-footer {
-    background-color: #828489;
-    position:bottom;
+  background-color: #828489;
+  position: bottom;
 }
 
 .footer-links {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-links > div {
-    /* margin-left: 250px; */
-    text-align: center; 
-    font-size: 40px;
-    width: 50px;
-    margin: 10px 40px;
-    /* margin-left:40px; */
-    /* margin-right:40px; */
+  /* margin-left: 250px; */
+  text-align: center;
+  font-size: 40px;
+  width: 50px;
+  margin: 10px 40px;
+  /* margin-left:40px; */
+  /* margin-right:40px; */
 }
 
 .copyright-text {
-    color: white;
-    text-align: center;
-    margin: 0px;
+  color: white;
+  text-align: center;
+  margin: 0px;
 }

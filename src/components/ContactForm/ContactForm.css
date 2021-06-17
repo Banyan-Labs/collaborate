@@ -1,20 +1,20 @@
 .contact-form {
-    width: 500px;
-    height: 400px;
-    margin-left: 225px;
-    margin-top: 100px;
+  width: 500px;
+  height: 400px;
+  margin-left: 225px;
+  margin-top: 100px;
 }
 
 .form-input {
-    background-color: #B0B0B0;
+  background-color: #b0b0b0;
 }
 
 .form-control::-webkit-input-placeholder {
-    color: white;
+  color: white;
 }
 
 #button {
-    background-color: green;
+  background-color: green;
 }
 
 /* .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
